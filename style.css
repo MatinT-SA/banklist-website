@@ -309,70 +309,70 @@ h4 {
 /* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╣ Processes ╠▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
 /* ❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃ */
 
-.operations {
+.processes {
     max-width: 100rem;
     margin: 12rem auto 0 auto;
 
     background-color: #fff;
 }
 
-.operations__tab-container {
+.processes__tab-container {
     display: flex;
     justify-content: center;
 }
 
-.operations__tab {
+.processes__tab {
     margin-right: 2.5rem;
     transform: translateY(-50%);
 }
 
-.operations__tab span {
+.processes__tab span {
     margin-right: 1rem;
     font-weight: 600;
     display: inline-block;
 }
 
-.operations__tab--1 {
+.processes__tab--1 {
     background-color: var(--color-secondary);
 }
 
-.operations__tab--1:hover {
+.processes__tab--1:hover {
     background-color: var(--color-secondary-darker);
 }
 
-.operations__tab--3 {
+.processes__tab--3 {
     background-color: var(--color-tertiary);
     margin: 0;
 }
 
-.operations__tab--3:hover {
+.processes__tab--3:hover {
     background-color: var(--color-tertiary-darker);
 }
 
-.operations__tab--active {
+.processes__tab--active {
     transform: translateY(-66%);
 }
 
-.operations__content {
+.processes__content {
     display: none;
     font-size: 1.7rem;
     padding: 2.5rem 7rem 6.5rem 7rem;
 }
 
-.operations__content--active {
+.processes__content--active {
     display: grid;
     grid-template-columns: 7rem 1fr;
     column-gap: 3rem;
     row-gap: 0.5rem;
 }
 
-.operations__header {
+.processes__header {
     font-size: 2.25rem;
     font-weight: 500;
     align-self: center;
 }
 
-.operations__icon {
+.processes__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -381,36 +381,36 @@ h4 {
     border-radius: 50%;
 }
 
-.operations__icon svg {
+.processes__icon svg {
     height: 2.75rem;
     width: 2.75rem;
 }
 
-.operations__content p {
+.processes__content p {
     grid-column: 2;
 }
 
-.operations__icon--1 {
+.processes__icon--1 {
     background-color: var(--color-secondary-opacity);
 }
 
-.operations__icon--2 {
+.processes__icon--2 {
     background-color: var(--color-primary-opacity);
 }
 
-.operations__icon--3 {
+.processes__icon--3 {
     background-color: var(--color-tertiary-opacity);
 }
 
-.operations__icon--1 svg {
+.processes__icon--1 svg {
     fill: var(--color-secondary-darker);
 }
 
-.operations__icon--2 svg {
+.processes__icon--2 svg {
     fill: var(--color-primary);
 }
 
-.operations__icon--3 svg {
+.processes__icon--3 svg {
     fill: var(--color-tertiary);
 }
 
@@ -504,12 +504,12 @@ h4 {
 /* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╣ Reviews ╠▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
 /* ❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃ */
 
-.testimonial {
+.review {
     width: 65%;
     position: relative;
 }
 
-.testimonial::before {
+.review::before {
     content: '\201C';
     position: absolute;
     top: -5.7rem;
@@ -521,19 +521,19 @@ h4 {
     z-index: -1;
 }
 
-.testimonial__header {
+.review__header {
     font-size: 2.25rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
 }
 
-.testimonial__text {
+.review__text {
     font-size: 1.7rem;
     margin-bottom: 3.5rem;
     color: #666;
 }
 
-.testimonial__author {
+.review__author {
     margin-left: 3rem;
     font-style: normal;
 
@@ -542,24 +542,24 @@ h4 {
     column-gap: 2rem;
 }
 
-.testimonial__photo {
+.review__photo {
     grid-row: 1 / span 2;
     width: 6.5rem;
     border-radius: 50%;
 }
 
-.testimonial__name {
+.review__name {
     font-size: 1.7rem;
     font-weight: 500;
     align-self: end;
     margin: 0;
 }
 
-.testimonial__location {
+.review__location {
     font-size: 1.5rem;
 }
 
-.section__title--testimonials {
+.section__title--reviews {
     margin-bottom: 4rem;
 }
 
