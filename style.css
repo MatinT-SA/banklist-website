@@ -697,7 +697,6 @@ h4 {
 }
 
 .btn--close-modal {
-    font-family: inherit;
     color: inherit;
     position: absolute;
     top: 3rem;
@@ -712,7 +711,7 @@ h4 {
 }
 
 .btn--close-modal .close-icon {
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, color 0.3s ease-in-out;
     position: absolute;
 }
 
@@ -727,13 +726,13 @@ h4 {
 .btn--close-modal:hover .default-icon {
     opacity: 0;
     transform: rotate(180deg);
-    color: red;
+    color: var(--color-primary);
 }
 
 .btn--close-modal:hover .hover-icon {
     opacity: 1;
-    transform: scale(1.5);
-    color: red;
+    transform: scale(1.2);
+    color: var(--color-primary);
 }
 
 .hidden {
