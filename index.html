@@ -324,8 +324,11 @@
     </footer>
 
     <!-- Modal -->
-    <div class="modal hidden">
-        <button class="btn--close-modal">&times;</button>
+    <div class="modal hidden" id="modal">
+        <button class="btn--close-modal" id="closeButton">
+            <span class="close-icon default-icon">&times;</span>
+            <span class="close-icon hover-icon">&#10005;</span>
+        </button>
         <h2 class="modal__header">
             Create an Account <br />
             in just <span class="highlight">5 minutes</span>
@@ -341,7 +344,7 @@
             <button class="btn">Next step &rarr;</button>
         </form>
     </div>
-    <div class="overlay hidden"></div>
+    <div class="overlay hidden" id="overlay"></div>
 
     <!-- Script -->
     <script src="script.js"></script>
