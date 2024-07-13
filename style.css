@@ -564,10 +564,10 @@ h4 {
 }
 
 /* ❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃ */
-/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╣ Registration ╠▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╣ Register ╠▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
 /* ❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃ */
 
-.section--sign-up {
+.section__register {
     background-color: #37383d;
     border-top: none;
     border-bottom: 1px solid #444;
@@ -575,16 +575,16 @@ h4 {
     padding: 10rem 3rem;
 }
 
-.section--sign-up .section__header {
+.section__register .section__header {
     color: #fff;
     text-align: center;
 }
 
-.section--sign-up .section__title {
+.section__register .section__title {
     margin-bottom: 6rem;
 }
 
-.section--sign-up .btn {
+.section__register .btn {
     font-size: 1.9rem;
     padding: 2rem 5rem;
 }
