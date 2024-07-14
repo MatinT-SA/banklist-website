@@ -748,18 +748,17 @@ h4 {
 .cookie-message {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 0 2rem;
     width: 100%;
-    background-color: white;
-    color: #bbb;
+    color: #d8d8d8;
     font-size: 1.5rem;
     font-weight: 400;
-    width: 100%;
-    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    background: linear-gradient(to right, #191970, #000000);
 }
 
 .btn--close-cookie {
-    margin: .5rem auto;
+    margin: 1rem auto;
     padding: 1rem 3rem;
     font-size: 1.5rem;
 }
