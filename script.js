@@ -33,3 +33,7 @@ const cookieMsg = document.createElement('div');
 cookieMsg.classList.add('cookie-message');
 cookieMsg.innerHTML = 'This website uses cookies to ensure you get the best experience on our website. <button class="btn btn--close-cookie">Accept</button>';
 header.append(cookieMsg);
+
+document.querySelector('.btn--close-cookie').addEventListener('click', function () {
+    cookieMsg.remove();
+})
