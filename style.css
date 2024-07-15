@@ -759,7 +759,7 @@ h4 {
 }
 
 .btn--close-cookie {
-    margin: 1rem auto;
+    margin: 1rem 0;
     padding: 1rem 3rem;
     font-size: 1.5rem;
     background-color: rgb(28, 128, 28);
