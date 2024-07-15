@@ -4,6 +4,8 @@ const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.btn--close-modal');
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 const header = document.querySelector('.header');
+const featureSection = document.querySelector('#section__features');
+const btnScrollTo = document.querySelector('.btn--scroll-to');
 
 const openModal = function (e) {
     e.preventDefault();
@@ -37,3 +39,10 @@ header.append(cookieMsg);
 document.querySelector('.btn--close-cookie').addEventListener('click', function () {
     cookieMsg.remove();
 })
+
+/***** Scrolling ********/
+btnScrollTo.addEventListener('click', function (e) {
+    const featureSectionCoords = featureSection.getBoundingClientRect();
+
+    window.scrollTo(featureSectionCoords.left, featureSectionCoords.top);
+});
