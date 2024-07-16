@@ -9,7 +9,7 @@ const btnScrollTo = document.querySelector('.btn--scroll-to');
 const navLinks = document.querySelector('.nav__links');
 const tabs = document.querySelectorAll('.processes__tab');
 const tabsContainer = document.querySelector('.processes__tab-container');
-const tabsContent = document.querySelector('.tabs__content');
+const tabsContent = document.querySelectorAll('.processes__content');
 
 /***** open modal ********/
 const openModal = function (e) {
@@ -66,6 +66,13 @@ tabsContainer.addEventListener('click', function (e) {
 
     if (!clicked) return;
 
+    // removing active classes
     tabs.forEach(t => t.classList.remove('processes__tab--active'));
+    tabsContent.forEach(tc => tc.classList.remove('processes__content--active'));
+
+    // activate tab
     clicked.classList.add('processes__tab--active');
-})
+
+    // activate tab content 
+    document.querySelector(`.processes__content--${clicked.dataset.tab}`).classList.add('processes__content--active');
+});
