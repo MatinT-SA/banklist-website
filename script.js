@@ -6,6 +6,7 @@ const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 const header = document.querySelector('.header');
 const featureSection = document.querySelector('#section__features');
 const btnScrollTo = document.querySelector('.btn--scroll-to');
+const navLinks = document.querySelector('.nav__links');
 
 const openModal = function (e) {
     e.preventDefault();
@@ -43,4 +44,13 @@ document.querySelector('.btn--close-cookie').addEventListener('click', function 
 /***** Scrolling ********/
 btnScrollTo.addEventListener('click', function (e) {
     featureSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+navLinks.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    if (e.target.classList.contains('nav__link')) {
+        const id = e.target.getAttribute('href');
+        document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+    }
 });
