@@ -273,7 +273,8 @@ h4 {
 }
 
 .features__img {
-    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
 }
 
 .features__feature {
