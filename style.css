@@ -351,12 +351,12 @@ h4 {
 }
 
 .processes__tab--active {
-    transform: translateY(-66%);
+    transform: translate(4%, -70%);
 }
 
 .processes__content {
     display: none;
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding: 2.5rem 7rem 6.5rem 7rem;
 }
 
@@ -368,7 +368,7 @@ h4 {
 }
 
 .processes__header {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 500;
     align-self: center;
 }
