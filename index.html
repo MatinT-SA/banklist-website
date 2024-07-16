@@ -37,6 +37,18 @@
             <path
                 d="M20 8v5h-2V9.41l-5.59 5.58L11 13l5.59-5.59H14V6h6zM4 16v-5h2v3.59l5.59-5.58L13 11l-5.59 5.59H10V18H4z" />
         </symbol>
+
+        <!-- Rapid borrowing icon -->
+        <symbol id="icon-rapid-borrowing" viewBox="0 0 24 24">
+            <path
+                d="M19 7h-4V2H9v5H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM11 4h2v3h-2V4zm3 14H8v-2h6v2zm0-4H8v-2h6v2zm4-5H6V9h12v2z" />
+        </symbol>
+
+        <!-- Quick termination icon -->
+        <symbol id="icon-quick-termination" viewBox="0 0 24 24">
+            <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM15 9l-3 3-3-3-1.41 1.41L11 13l-3 3L9 17.41 12 14.41l3 3 1.41-1.41-3-3 3-3L15 9z" />
+        </symbol>
     </svg>
 
     <!-- Header -->
@@ -155,6 +167,7 @@
                     <span>03</span>Quick Terimination
                 </button>
             </div>
+
             <div class="processes__content processes__content--1 processes__content--active">
                 <div class="processes__icon processes__icon--1">
                     <svg width="24" height="24">
@@ -173,8 +186,8 @@
 
             <div class="processes__content processes__content--2">
                 <div class="processes__icon processes__icon--2">
-                    <svg>
-                        <use xlink:href="img/icons.svg#icon-home"></use>
+                    <svg class="icon">
+                        <use xlink:href="#icon-rapid-borrowing"></use>
                     </svg>
                 </div>
                 <h5 class="processes__header">
@@ -187,10 +200,11 @@
                     anim id est laborum.
                 </p>
             </div>
+
             <div class="processes__content processes__content--3">
                 <div class="processes__icon processes__icon--3">
-                    <svg>
-                        <use xlink:href="img/icons.svg#icon-user-x"></use>
+                    <svg class="icon">
+                        <use xlink:href="#icon-quick-termination"></use>
                     </svg>
                 </div>
                 <h5 class="processes__header">

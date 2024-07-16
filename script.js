@@ -7,7 +7,11 @@ const header = document.querySelector('.header');
 const featureSection = document.querySelector('#section__features');
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 const navLinks = document.querySelector('.nav__links');
+const tabs = document.querySelectorAll('.processes__tab');
+const tabsContainer = document.querySelector('.processes__tab-container');
+const tabsContent = document.querySelectorAll('.processes__content');
 
+/***** open modal ********/
 const openModal = function (e) {
     e.preventDefault();
 
@@ -15,6 +19,7 @@ const openModal = function (e) {
     overlay.classList.remove('hidden');
 };
 
+/***** close modal ********/
 const closeModal = function () {
     modal.classList.add('hidden');
     overlay.classList.add('hidden');
@@ -53,4 +58,21 @@ navLinks.addEventListener('click', function (e) {
         const id = e.target.getAttribute('href');
         document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
     }
+});
+
+/***** tabs ********/
+tabsContainer.addEventListener('click', function (e) {
+    const clicked = e.target.closest('.processes__tab');
+
+    if (!clicked) return;
+
+    // removing active classes
+    tabs.forEach(t => t.classList.remove('processes__tab--active'));
+    tabsContent.forEach(tc => tc.classList.remove('processes__content--active'));
+
+    // activate tab
+    clicked.classList.add('processes__tab--active');
+
+    // activate tab content 
+    document.querySelector(`.processes__content--${clicked.dataset.tab}`).classList.add('processes__content--active');
 });
