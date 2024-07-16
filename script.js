@@ -42,7 +42,7 @@ document.querySelector('.btn--close-cookie').addEventListener('click', function 
 })
 
 /***** Scrolling ********/
-btnScrollTo.addEventListener('click', function (e) {
+btnScrollTo.addEventListener('click', function () {
     featureSection.scrollIntoView({ behavior: 'smooth' });
 });
 
