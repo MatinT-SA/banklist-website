@@ -66,6 +66,6 @@ tabsContainer.addEventListener('click', function (e) {
 
     if (!clicked) return;
 
-    // active class to clicked tab
+    tabs.forEach(t => t.classList.remove('processes__tab--active'));
     clicked.classList.add('processes__tab--active');
 })
