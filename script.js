@@ -13,6 +13,10 @@ const tabsContent = document.querySelectorAll('.processes__content');
 const nav = document.querySelector('.nav');
 const allSections = document.querySelectorAll('.section');
 const lazyLoadImgs = document.querySelectorAll('img[data-src]');
+const slides = document.querySelectorAll('.slide');
+const slider = document.querySelector('.slider');
+const btnSliderRight = document.querySelector('.slider__btn--right');
+const btnSliderLeft = document.querySelector('.slider__btn--left');
 
 /***** open modal ********/
 
@@ -165,3 +169,21 @@ const lazyObserver = new IntersectionObserver(lazyLoadFunc, {
     rootMargin: '300px'
 });
 lazyLoadImgs.forEach(img => lazyObserver.observe(img));
+
+/***** Slider ********/
+let curSlide = 0;
+const maxSlide = slides.length;
+
+slider.style.transform
+
+slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
+
+btnSliderRight.addEventListener('click', function () {
+    if (curSlide === maxSlide - 1) {
+        curSlide = 0;
+    } else {
+        curSlide++;
+    }
+
+    slides.forEach((s, i) => (s.style.transform = `translateX(${100 * (i - curSlide)}%)`));
+})
