@@ -11,6 +11,7 @@ const tabs = document.querySelectorAll('.processes__tab');
 const tabsContainer = document.querySelector('.processes__tab-container');
 const tabsContent = document.querySelectorAll('.processes__content');
 const nav = document.querySelector('.nav');
+const allSections = document.querySelectorAll('.section');
 
 /***** open modal ********/
 
@@ -120,3 +121,24 @@ const headerObserverOption = {
 
 const headerObserver = new IntersectionObserver(stickyNav, headerObserverOption);
 headerObserver.observe(header);
+
+/***** Slide up for sections on scroll ********/
+
+const slideUpSection = function (entries, observer) {
+    const [entry] = entries;
+
+    if (!entry.isIntersecting) return;
+    entry.target.classList.remove('section--hidden');
+    observer.unobserve(entry.target);
+}
+
+const slideUpSectionOption = {
+    root: null,
+    threshold: 0.2
+};
+
+const sectionObserver = new IntersectionObserver(slideUpSection, slideUpSectionOption);
+allSections.forEach(section => {
+    sectionObserver.observe(section);
+    section.classList.add('section--hidden');
+})
