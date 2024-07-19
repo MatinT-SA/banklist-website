@@ -162,6 +162,6 @@ const lazyLoadFunc = (entries, observer) => {
 const lazyObserver = new IntersectionObserver(lazyLoadFunc, {
     root: null,
     threshold: 0,
-    rootMargin: '250px'
+    rootMargin: '300px'
 });
 lazyLoadImgs.forEach(img => lazyObserver.observe(img));
