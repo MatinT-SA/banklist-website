@@ -174,16 +174,34 @@ lazyLoadImgs.forEach(img => lazyObserver.observe(img));
 let curSlide = 0;
 const maxSlide = slides.length;
 
-slider.style.transform
+const slideMovement = function (slide) {
+    slides.forEach(
+        (s, i) => (
+            s.style.transform = `translateX(${100 * (i - slide)}%)`)
+    )
+}
 
-slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
+slideMovement(0);
 
-btnSliderRight.addEventListener('click', function () {
+const nextSlide = function () {
     if (curSlide === maxSlide - 1) {
         curSlide = 0;
     } else {
         curSlide++;
     }
 
-    slides.forEach((s, i) => (s.style.transform = `translateX(${100 * (i - curSlide)}%)`));
-})
+    slideMovement(curSlide);
+}
+
+const prevSlide = function () {
+    if (curSlide === 0) {
+        curSlide = maxSlide - 1;
+    } else {
+        curSlide--;
+    }
+
+    slideMovement(curSlide);
+}
+
+btnSliderRight.addEventListener('click', nextSlide);
+btnSliderLeft.addEventListener('click', prevSlide);
