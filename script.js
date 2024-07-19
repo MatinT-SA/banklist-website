@@ -10,8 +10,9 @@ const navLinks = document.querySelector('.nav__links');
 const tabs = document.querySelectorAll('.processes__tab');
 const tabsContainer = document.querySelector('.processes__tab-container');
 const tabsContent = document.querySelectorAll('.processes__content');
+const nav = document.querySelector('.nav');
 
-/***** open modal ********/const nav = document.querySelector('.nav');
+/***** open modal ********/
 
 const openModal = function (e) {
     e.preventDefault();
@@ -79,6 +80,7 @@ navLinks.addEventListener('click', function (e) {
 });
 
 /***** tabs ********/
+
 tabsContainer.addEventListener('click', function (e) {
     const clicked = e.target.closest('.processes__tab');
 
@@ -94,3 +96,27 @@ tabsContainer.addEventListener('click', function (e) {
     // activate tab content 
     document.querySelector(`.processes__content--${clicked.dataset.tab}`).classList.add('processes__content--active');
 });
+
+/***** Sticky Nav ********/
+
+const navHeight = nav.getBoundingClientRect().height;
+
+const stickyNav = function (entries) {
+    const [entry] = entries;
+
+    if (!entry.isIntersecting) {
+        nav.classList.add('sticky')
+    }
+    else {
+        nav.classList.remove('sticky');
+    }
+}
+
+const headerObserverOption = {
+    root: null,
+    threshold: 0,
+    rootMargin: `-${navHeight}px`
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, headerObserverOption);
+headerObserver.observe(header);
