@@ -12,6 +12,7 @@ const tabsContainer = document.querySelector('.processes__tab-container');
 const tabsContent = document.querySelectorAll('.processes__content');
 const nav = document.querySelector('.nav');
 const allSections = document.querySelectorAll('.section');
+const lazyLoadImgs = document.querySelectorAll('img[data-src]');
 
 /***** open modal ********/
 
@@ -122,7 +123,7 @@ const headerObserverOption = {
 const headerObserver = new IntersectionObserver(stickyNav, headerObserverOption);
 headerObserver.observe(header);
 
-/***** Slide up for sections on scroll ********/
+/***** Slide up sections ********/
 
 const slideUpSection = function (entries, observer) {
     const [entry] = entries;
@@ -142,3 +143,25 @@ allSections.forEach(section => {
     sectionObserver.observe(section);
     section.classList.add('section--hidden');
 })
+
+/***** Lazy Loading ********/
+
+const lazyLoadFunc = (entries, observer) => {
+    const [entry] = entries;
+
+    if (!entry.isIntersecting) return;
+
+    // replace src with data-src
+    entry.target.src = entry.target.dataset.src;
+
+    entry.target.addEventListener('load', function () {
+        entry.target.classList.remove('lazy-img');
+    })
+}
+
+const lazyObserver = new IntersectionObserver(lazyLoadFunc, {
+    root: null,
+    threshold: 0,
+    rootMargin: '250px'
+});
+lazyLoadImgs.forEach(img => lazyObserver.observe(img));
