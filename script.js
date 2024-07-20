@@ -171,6 +171,7 @@ const lazyObserver = new IntersectionObserver(lazyLoadFunc, {
 lazyLoadImgs.forEach(img => lazyObserver.observe(img));
 
 /***** Slider ********/
+
 let curSlide = 0;
 const maxSlide = slides.length;
 
@@ -205,3 +206,7 @@ const prevSlide = function () {
 
 btnSliderRight.addEventListener('click', nextSlide);
 btnSliderLeft.addEventListener('click', prevSlide);
+
+document.addEventListener('keydown', function (e) {
+    e.key === 'ArrowLeft' ? prevSlide() : nextSlide();
+})
