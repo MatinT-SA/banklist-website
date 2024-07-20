@@ -508,41 +508,39 @@ h4 {
 /* ❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃ */
 
 .review {
-    width: 65%;
+    width: 70%;
     position: relative;
 }
 
 .review::before {
     content: '\201C';
     position: absolute;
-    top: -5.7rem;
-    left: -6.8rem;
+    top: -3.5rem;
+    left: -9rem;
     line-height: 1;
-    font-size: 20rem;
-    font-family: inherit;
+    font-size: 22rem;
     color: var(--color-primary);
     z-index: -1;
 }
 
 .review__header {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .review__text {
-    font-size: 1.7rem;
-    margin-bottom: 3.5rem;
-    color: #666;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    color: #5a5656;
 }
 
 .review__author {
-    margin-left: 3rem;
-    font-style: normal;
+    margin-left: 5rem;
 
     display: grid;
-    grid-template-columns: 6.5rem 1fr;
-    column-gap: 2rem;
+    grid-template-columns: 7rem 4fr 1fr 2fr;
+    column-gap: 1.3rem;
 }
 
 .review__photo {
@@ -554,18 +552,18 @@ h4 {
 }
 
 .review__name {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 500;
     align-self: end;
     margin: 0;
 }
 
 .review__location {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .section__title--reviews {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 /* ❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃ */
