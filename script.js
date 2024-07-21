@@ -245,9 +245,3 @@ const sliderFunc = function () {
 }
 
 sliderFunc();
-
-/***** banklist-web-app button ********/
-
-blWebAppBtn.addEventListener('click', function () {
-    window.location.href = "https://matint-sa.github.io/banklist-web-app/";
-});

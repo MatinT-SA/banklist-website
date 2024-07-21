@@ -107,16 +107,22 @@ body {
 
 .btn--text {
     display: inline-block;
-    background: none;
-    font-size: 1.7rem;
+    background: var(--color-primary-darker);
+    font-size: 4rem;
     font-family: inherit;
     font-weight: 500;
     color: var(--color-primary);
-    border: none;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
+    border: 5px solid var(--color-primary);
+    padding: .2rem 1.5rem;
     cursor: pointer;
     transition: all 0.3s;
+    position: relative;
+    bottom: 5rem;
+}
+
+.btn--text:hover {
+    background: var(--color-primary);
+    color: var(--color-primary-darker);
 }
 
 p {
@@ -260,6 +266,16 @@ h4 {
     opacity: 0.8;
     transform: scale(1.06, 1.02) skewX(20deg);
     background-image: var(--gradient-primary);
+}
+
+.bl__web--app {
+    margin: auto 4rem;
+    font-size: 2.5rem;
+    padding: 2rem 5rem;
+    text-decoration: none;
+    color: inherit;
+    font-style: italic;
+    font-weight: bold;
 }
 
 /* ❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃ */
