@@ -18,6 +18,7 @@ const slider = document.querySelector('.slider');
 const btnSliderRight = document.querySelector('.slider__btn--right');
 const btnSliderLeft = document.querySelector('.slider__btn--left');
 const dotsSlider = document.querySelector('.dots');
+const blWebAppBtn = document.querySelector('.bl__web--app');
 
 /***** open modal ********/
 
