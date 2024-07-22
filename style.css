@@ -903,7 +903,7 @@ h4 {
     }
 
     .nav__toggle.active .nav__toggle-bar:nth-child(1) {
-        transform: rotate(45deg) translateY(.9rem);
+        transform: rotate(45deg) translateY(.95rem);
     }
 
     .nav__toggle.active .nav__toggle-bar:nth-child(2) {
@@ -911,6 +911,11 @@ h4 {
     }
 
     .nav__toggle.active .nav__toggle-bar:nth-child(3) {
-        transform: rotate(-45deg) translateY(-.9rem);
+        transform: rotate(-45deg) translateY(-.95rem);
+    }
+
+    .btn--text {
+        font-size: 3rem;
+        padding: .2rem 1rem;
     }
 }
