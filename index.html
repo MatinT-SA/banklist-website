@@ -55,11 +55,14 @@
     </svg>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <nav class="nav">
-            <a href="/">
-                <img src="image/logo.png" alt="logo" class="nav__logo" id="logo" />
-            </a>
+            <img src="image/logo.png" alt="logo" class="nav__logo" id="logo" />
+            <button class="nav__toggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
             <ul class="nav__links">
                 <li class="nav__item">
                     <a class="nav__link" href="#section__features">Features</a>
@@ -90,6 +93,7 @@
         </div>
         <button class="btn--text btn--scroll-to">&DownArrow;</button>
     </header>
+
 
     <!-- Features -->
     <section class="section" id="section__features">
@@ -364,7 +368,7 @@
             <input type="text" />
             <label>Email Address</label>
             <input type="email" />
-            <a href="https://matint-sa.github.io/banklist-web-app/" class="btn" type="button">Next step
+            <a href="https://matint-sa.github.io/banklist-web-app/" class="btn btn-modal" type="button">Next step
                 &rarr;</a>
         </form>
     </div>
