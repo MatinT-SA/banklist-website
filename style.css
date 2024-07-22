@@ -222,7 +222,7 @@ img {
     height: 0.2rem;
     background-color: #333;
     margin: 0.25rem 0;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 /* ❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃ */
@@ -230,6 +230,7 @@ img {
 /* ❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃ */
 
 .header {
+    position: relative;
     padding: 1rem 3rem 0;
     height: 100vh;
     display: flex;
@@ -874,19 +875,23 @@ h4 {
 
 @media (max-width: 768px) {
     .nav__links {
-        display: none;
+        display: flex;
         flex-direction: column;
-        width: 100%;
-        position: absolute;
+        width: 30%;
+        position: fixed;
         top: 10rem;
-        left: 0;
-        background-color: #fff;
+        right: 0;
+        background-color: rgba(255, 255, 255, .9);
         border-top: 1px solid #ddd;
+        height: 40%;
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-out;
         z-index: 101;
     }
 
     .nav__links.active {
-        display: flex;
+        transform: translateX(0);
     }
 
     .nav__item {
@@ -917,5 +922,15 @@ h4 {
     .btn--text {
         font-size: 3rem;
         padding: .2rem 1rem;
+    }
+
+    .header__bl--web--app {
+        margin: auto 1rem;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-weight: bold;
     }
 }

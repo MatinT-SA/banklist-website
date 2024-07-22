@@ -20,6 +20,7 @@ const btnSliderLeft = document.querySelector('.slider__btn--left');
 const dotsSlider = document.querySelector('.dots');
 const blWebAppBtn = document.querySelector('.bl__web--app');
 const navToggle = document.querySelector('.nav__toggle');
+const mainLogo = document.querySelector('.nav__logo');
 
 /***** open modal ********/
 
@@ -87,6 +88,11 @@ navLinks.addEventListener('click', function (e) {
         document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
     }
 });
+
+mainLogo.addEventListener('click', function (e) {
+    e.preventDefault();
+    header.scrollIntoView({ behavior: 'smooth' });
+})
 
 /***** tabs ********/
 
