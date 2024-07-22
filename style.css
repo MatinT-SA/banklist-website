@@ -816,3 +816,40 @@ h4 {
         font-size: 2rem;
     }
 }
+
+@media (max-width: 1025px) {
+    .header__img {
+        height: auto;
+        object-fit: contain;
+        transform: translateX(0rem);
+    }
+
+    .section {
+        padding: 14rem 3rem;
+    }
+
+    .features {
+        margin: 0 4rem;
+        gap: 5rem 3rem;
+    }
+
+    .features__feature {
+        font-size: 1.2rem;
+    }
+
+    .features__icon {
+        margin-bottom: 0;
+    }
+
+    .features__header {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+}
