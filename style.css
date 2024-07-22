@@ -1106,3 +1106,61 @@ h4 {
         margin: auto 2rem;
     }
 }
+
+@media (max-width: 380px) {
+    .cookie-message {
+        padding: 0 1rem;
+    }
+
+    .btn--close-cookie {
+        margin: 0 1rem;
+        font-size: 1.4rem;
+    }
+
+    .processes__tab {
+        padding: 0.75rem .5rem;
+        margin-right: 1rem;
+    }
+
+    .section__header {
+        font-size: 2rem;
+    }
+
+    .review__text {
+        font-size: 1.3rem;
+    }
+
+    .review::before {
+        left: -6rem;
+    }
+
+    .review__author {
+        grid-template-columns: 7rem 1fr;
+    }
+
+    .section__register .btn {
+        padding: 2rem 4rem;
+        font-size: 1.5rem;
+    }
+
+    .modal {
+        width: 35rem;
+    }
+
+    .modal__header {
+        font-size: 2.5rem;
+    }
+
+    .modal__form {
+        gap: 1rem;
+    }
+
+    .modal__form label {
+        font-size: 1.3rem;
+    }
+
+    .modal__form input {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+}
