@@ -1063,6 +1063,10 @@ h4 {
         justify-items: center;
         gap: 3rem;
     }
+
+    .footer__item {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 550px) {
@@ -1089,8 +1093,12 @@ h4 {
         padding: 1rem 1rem 0;
     }
 
+    .header__title {
+        grid-template-columns: 3fr 3fr;
+    }
+
     .header__bl--web--app {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         padding: 1rem 2rem;
     }
 
@@ -1162,5 +1170,53 @@ h4 {
     .modal__form input {
         font-size: 1.4rem;
         padding: 1rem;
+    }
+}
+
+@media (max-width: 325px) {
+    .header__bl--web--app {
+        font-size: 1.25rem;
+    }
+
+    .cookie-message {
+        font-size: 1.2rem;
+    }
+
+    .nav {
+        padding: 0 1rem;
+    }
+
+    .nav__logo {
+        height: 10rem;
+    }
+
+    .nav__links {
+        right: 0rem;
+    }
+
+    .features {
+        margin: 0 1rem;
+    }
+
+    .section__title {
+        padding: 0 1rem;
+    }
+
+    .review::before {
+        font-size: 17rem;
+        top: -1.5rem;
+    }
+
+    .review__photo {
+        height: auto;
+    }
+
+    .review__location {
+        font-size: 1.2rem;
+    }
+
+    .footer__nav {
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 }
