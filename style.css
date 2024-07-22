@@ -1077,4 +1077,32 @@ h4 {
     h1 {
         font-size: 2rem;
     }
+
+    .modal {
+        width: 40rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        padding: 1rem 1rem 0;
+    }
+
+    .header__bl--web--app {
+        font-size: 1.75rem;
+        padding: 1rem 2rem;
+    }
+
+    .nav {
+        padding: 0 4rem;
+    }
+
+    .nav.sticky {
+        padding: 0 6rem;
+    }
+
+    .slide {
+        margin: auto 2rem;
+    }
 }
