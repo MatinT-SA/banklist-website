@@ -33,6 +33,11 @@ html {
     font-size: 60%;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     font-weight: 300;
     color: #444;
@@ -72,6 +77,7 @@ body {
 .section__title {
     max-width: 80rem;
     margin: 0 auto 6rem auto;
+    padding: 0 2rem;
 }
 
 .section__description {
@@ -160,6 +166,7 @@ img {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.95);
     top: 0;
+    padding: 0 9rem;
 }
 
 .nav__logo {
@@ -837,14 +844,41 @@ h4 {
 }
 
 @media (max-width: 1025px) {
+    .section {
+        padding: 14rem 1rem;
+    }
+
+    .section__header {
+        font-size: 3rem;
+    }
+
+    .processes {
+        max-width: 70rem;
+    }
+
+    .processes__icon {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    .processes__content {
+        font-size: 1.4rem;
+        padding: 2rem 4rem 4rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 1rem 3rem;
+    }
+
     .header__img {
         height: auto;
         object-fit: contain;
         transform: translateX(0rem);
-    }
-
-    .section {
-        padding: 14rem 3rem;
     }
 
     .features {
@@ -871,23 +905,34 @@ h4 {
     h4 {
         font-size: 2rem;
     }
+
+    .review__text {
+        font-size: 1.5rem;
+    }
+
+    .btn-modal {
+        font-size: 2rem;
+        padding: 1.25rem 3rem;
+    }
 }
 
 @media (max-width: 768px) {
     .nav__links {
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 25rem;
+        max-width: 20rem;
         position: fixed;
         top: 10rem;
-        right: 0;
+        right: 2rem;
         background-color: rgba(255, 255, 255, .9);
         border-top: 1px solid #ddd;
         height: 40%;
         overflow-y: auto;
-        transform: translateX(100%);
+        transform: translateX(110%);
         transition: transform 0.3s ease-out;
         z-index: 101;
+        border-radius: .2rem;
     }
 
     .nav__links.active {
@@ -919,6 +964,14 @@ h4 {
         transform: rotate(-45deg) translateY(-.95rem);
     }
 
+    h1 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
     .btn--text {
         font-size: 3rem;
         padding: .2rem 1rem;
@@ -932,5 +985,96 @@ h4 {
         color: black;
         font-style: italic;
         font-weight: bold;
+    }
+
+    .section__header {
+        font-size: 2.5rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .processes {
+        max-width: 60rem;
+        margin: 6rem auto 0 auto;
+    }
+
+    .processes__icon {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .processes__content--active {
+        row-gap: 1rem;
+        column-gap: 2rem;
+        grid-template-columns: 4rem 1fr;
+    }
+
+    .processes__tab {
+        margin-right: 1.5rem;
+    }
+
+    .processes__header {
+        font-size: 1.5rem;
+    }
+
+    .processes__content {
+        font-size: 1.2rem;
+        padding: 1rem 2rem 4rem;
+    }
+
+    .processes__tab span {
+        margin-right: .5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: .5rem 1rem;
+    }
+
+    .review__header {
+        font-size: 1.5rem;
+    }
+
+    .slide {
+        margin: auto 1rem;
+    }
+
+    .slider {
+        height: 55rem;
+    }
+
+    .slider__btn {
+        height: 3rem;
+        width: 3rem;
+        font-size: 2rem;
+    }
+
+    .btn-modal {
+        font-size: 1.5rem;
+        padding: 1rem 2.5rem;
+    }
+
+    .footer__nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .btn--close-cookie {
+        margin: 1rem 0 1rem 3rem;
+    }
+
+    .cookie-message {
+        padding: 0 2rem 0 4rem;
+    }
+
+    h1 {
+        font-size: 2rem;
     }
 }
