@@ -19,6 +19,7 @@ const btnSliderRight = document.querySelector('.slider__btn--right');
 const btnSliderLeft = document.querySelector('.slider__btn--left');
 const dotsSlider = document.querySelector('.dots');
 const blWebAppBtn = document.querySelector('.bl__web--app');
+const navToggle = document.querySelector('.nav__toggle');
 
 /***** open modal ********/
 
@@ -245,3 +246,12 @@ const sliderFunc = function () {
 }
 
 sliderFunc();
+
+/***** Hamburger Icon ********/
+
+document.addEventListener('DOMContentLoaded', () => {
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        navToggle.classList.toggle('active');
+    });
+});

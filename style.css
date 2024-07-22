@@ -207,6 +207,24 @@ img {
     color: #333;
 }
 
+/* Hamburger menu styles */
+.nav__toggle {
+    display: none;
+    flex-direction: column;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.nav__toggle-bar {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #333;
+    margin: 0.25rem 0;
+    transition: 0.3s;
+}
+
 /* ❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃ */
 /* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╣ Header ╠▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
 /* ❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃❃ */
@@ -851,5 +869,48 @@ h4 {
 
     h4 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 10rem;
+        left: 0;
+        background-color: #fff;
+        border-top: 1px solid #ddd;
+        z-index: 101;
+    }
+
+    .nav__links.active {
+        display: flex;
+    }
+
+    .nav__item {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .nav__toggle {
+        display: flex;
+    }
+
+    .nav__toggle.active .nav__toggle-bar {
+        width: 5rem;
+    }
+
+    .nav__toggle.active .nav__toggle-bar:nth-child(1) {
+        transform: rotate(45deg) translateY(.9rem);
+    }
+
+    .nav__toggle.active .nav__toggle-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav__toggle.active .nav__toggle-bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-.9rem);
     }
 }
