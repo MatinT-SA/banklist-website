@@ -1095,6 +1095,7 @@ h4 {
 
     .header__title {
         grid-template-columns: 3fr 3fr;
+        row-gap: 2rem;
     }
 
     .header__bl--web--app {
@@ -1112,6 +1113,25 @@ h4 {
 
     .slide {
         margin: auto 2rem;
+    }
+
+    .cookie-message {
+        padding: 0 2rem;
+    }
+
+    .review::before {
+        left: -6rem;
+        top: -1rem;
+        font-size: 17rem;
+    }
+
+    .slider {
+        height: 92vh;
+    }
+
+    .review {
+        width: 74%;
+        margin: auto;
     }
 }
 
@@ -1200,6 +1220,10 @@ h4 {
 
     .section__title {
         padding: 0 1rem;
+    }
+
+    .review {
+        padding: 0 2rem;
     }
 
     .review::before {
