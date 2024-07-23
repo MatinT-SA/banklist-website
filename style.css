@@ -1095,7 +1095,7 @@ h4 {
 
     .header__title {
         grid-template-columns: 3fr 3fr;
-        row-gap: 2rem;
+        row-gap: 5rem;
     }
 
     .header__bl--web--app {
@@ -1190,6 +1190,11 @@ h4 {
     .modal__form input {
         font-size: 1.4rem;
         padding: 1rem;
+    }
+
+    .header__bl--web--app {
+        font-size: 1.4rem;
+        padding: .5rem 1.25rem;
     }
 }
 
