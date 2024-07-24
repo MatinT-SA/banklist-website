@@ -1,6 +1,8 @@
 # banklist-website
 This is the website for my Banklist web application. A fully responsive cool UI with phenominal features and animations.
 
+![banklist-website](https://github.com/user-attachments/assets/cca8ab12-f52d-4c33-b62c-79f8ff14d935)
+
 # branches
 In this project we made use of several branches to learn how to handle multiple branches and merging them wit each other such as:
 - main (default branch)
