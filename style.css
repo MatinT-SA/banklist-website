@@ -1248,4 +1248,26 @@ h4 {
         grid-template-columns: 1fr;
         justify-items: center;
     }
+
+    .modal {
+        width: 30rem;
+    }
+
+    .modal__form {
+        gap: 2rem 0rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .modal__form input {
+        padding: 1rem 0.5rem;
+        font-size: 1.2rem
+    }
+
+    .modal__form label {
+        font-size: 1.2rem;
+    }
+
+    .modal__header {
+        font-size: 2rem;
+    }
 }
